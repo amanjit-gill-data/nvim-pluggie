@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-package_path="$XDG_CONFIG_HOME/nvim-data/site/pack/git_plugins/"
+package_path="/home/ag/.local/share/nvim/site/pack/github/"
 log_file="${package_path}plugin_log" 
 
 # if --opt, installs plugin into opt/; otherwise installs into start/
@@ -86,9 +86,7 @@ print_log() {
   fi
 }
 
-
-
-# $1 = parent_dir/repo_dir
+# $1 = repo_dir
 update_one() {
  
       echo -n Updating $1...
@@ -169,6 +167,4 @@ case $1 in
     echo "Required argument: add|remove|update|log."
 
 esac
-
-
 
